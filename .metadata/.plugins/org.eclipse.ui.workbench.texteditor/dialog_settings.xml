@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="isRegEx" value="true"/>
+		<item key="selection" value="pn"/>
+		<list key="findhistory">
+			<item value="pn"/>
+			<item value="pnum"/>
+			<item value="item"/>
+			<item value="    &#x09;   "/>
+			<item value="dataPerPage"/>
+			<item value="pingingView"/>
+			<item value="mapContainer"/>
+			<item value="geoco"/>
+		</list>
+		<list key="replacehistory">
+			<item value="pnum"/>
+			<item value="res_payment"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="729"/>
+		<item key="DIALOG_Y_ORIGIN" value="403"/>
+	</section>
+</section>

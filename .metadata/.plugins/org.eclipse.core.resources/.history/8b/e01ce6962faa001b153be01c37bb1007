@@ -1,0 +1,17 @@
+package 반복;
+
+import java.util.Scanner;
+
+public class 실습1_6 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("1부터 n까지의 합을 구합니다.");
+		int n = 0;
+		
+		do {
+			System.out.print("n의 값");
+			int n = sc.nextInt();
+		}while(n<=0);
+		
+	}
+}

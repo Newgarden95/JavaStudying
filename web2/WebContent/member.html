@@ -1,0 +1,24 @@
+<!DOCTYPE html> <!--브라우저에게 알려줌  -->
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>회원가입</title>
+	</head>
+	<body>
+		<h1>회원가입 화면입니다.</h1>
+		<hr color = "purple">
+		<!-- form태그는 값을 입력하는 입력폼 -> 서버로 전송 -->
+		<!-- action: 입력값을 받아서 처리를 위한 다음 페이지를 지정 -->
+		<!-- 입력값들은 모두 form안에 들어가야한다. -->
+		<!-- 보내고자하는 건 form태그 안에 들어있어야한다  -->
+		<form action="member2.jsp"> <!-- .html이 아닌 .jsp(java server pages)사용해야함 -->
+		아이디: <input name="id"><br> <!-- (속성) name ="" : 뭐가 넘어가는지 모르니까 넘어가는거의 이름을 적어주기 위해 설정  다시말해, 넘어가는 값들은 이름을 갖고있어야함!!-->
+		패스워드: <input name="pw"><br>
+		이름: <input name = "name"><br>
+		연락처: <input name = "tel"><br>
+		<button>서버로 전송</button>
+		<!-- 이런 식으로 프론트엔드부분(html, css, js)에서 입력값을 넘기면 서버에서 받는데 이렇게 받기(처리를) 위해서는 자바언어를 활용해야한다. -->
+		<!-- 따라서 이 이후는 자바코드를 위해서 .jsp에 대한거  -->
+		</form>
+	</body>
+</html>

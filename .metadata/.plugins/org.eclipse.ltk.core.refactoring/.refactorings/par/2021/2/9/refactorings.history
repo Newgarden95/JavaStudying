@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Practice.연습문제&apos; to &apos;Main&apos;&#x0D;&#x0A;- Original project: &apos;par&apos;&#x0D;&#x0A;- Original element: &apos;Practice.연습문제&apos;&#x0D;&#x0A;- Renamed element: &apos;Practice.Main&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;연습문제&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;Practice{연습문제.java[연습문제" matchStrategy="1" name="Main" qualified="false" references="true" similarDeclarations="false" stamp="1614444456873" textual="false" version="1.0"/>
+</session>

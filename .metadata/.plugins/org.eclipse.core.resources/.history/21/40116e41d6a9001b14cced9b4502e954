@@ -1,0 +1,11 @@
+package 알고리즘1장;
+
+public class 실습1c_1 {
+	static int med3(int a, int b, int c) {
+		if(a>=b) 
+			if(b>=c) 
+				
+			
+		
+	}
+}

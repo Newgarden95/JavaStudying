@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="product">
+<!-- CRUD 4가지 만들기 -->
+<!-- product.메서드명 으로 mybatis를 사용할 수 있다. -->
+<!-- root-context.xml의 지정된 경로로 처리해준다. -->
+	<insert id="insert" parameterType="productVO"><!-- ProductDAO에서 id가 insert인 기능을 찾을때 아래 SQL문을 실행하여 DB에 data 저장 -->
+		insert into PRODUCT values (product_seq.nextval, #{pname}, #{ptype}, 
+		#{ctype}, #{price}, #{address}, #{contact}, #{floor}, #{rsize}, #{room}, 
+		#{total}, #{placetype}, #{roomimg}, #{pinfo}, #{dstatue}, #{address2})
+	</insert>	
+	
+	<select id="select" parameterType="productVO" resultType="productVO">
+		select * from PRODUCT where contact = #{contact} order by pnum
+	</select>
+
+	<select id="all" parameterType="productVO" resultType="productVO">
+		select * from PRODUCT order by pnum
+	</select>
+	
+	<select id="detail" parameterType="productVO" resultType="productVO">
+		select * from PRODUCT where pnum = #{pnum}
+	</select>
+	
+	<update id="update" parameterType="productVO">
+		update PRODUCT set pname = #{pname}, ptype = #{ptype}, ctype = #{ctype},
+		price = #{price}, address = #{address}, contact = #{contact}, floor = #{floor},
+		rsize = #{rsize}, room = #{room}, total = #{total}, placetype = #{placetype},
+		roomimg = #{roomimg}, pinfo = #{pinfo}, dstatue = #{dstatue}, address2 = #{address2} where pnum = #{pnum}
+	</update>
+	
+	<delete id="delete" parameterType="productVO">
+		delete from PRODUCT where pnum = #{pnum}
+	</delete>
+	
+	<!-- 선종님SQL -->
+	<select id="recommend" parameterType="ruserVO" resultType="String">
+		select roomimg from PRODUCT where ctype = #{usertype} and ptype = #{userroom} and placetype = #{userinterest}
+	</select>
+	
+	<select id="recommend1">
+		
+	</select>
+	
+	<!-- 신화원SQL -->
+	<!-- 전체상품 정보를 출력 -->
+	<select id="productList" resultType="productVO">
+		select * from "PRODUCT" 
+	</select>
+	
+	<!-- 선택된 방종류에 해당하는 정보를 출력 -->
+	<select id="productList1" parameterType="productVO" resultType="productVO">
+		select * from "PRODUCT" where ptype = #{ptype}
+	</select>
+	
+	<!-- 선택된 거래유형에 해당하는 정보를 출력 -->
+	<select id="productList2" parameterType="productVO" resultType="productVO">
+		select * from "PRODUCT" where ctype = #{ctype}
+	</select>
+	
+	<!-- 선택된 세권유형에 해당하는 정보를 출력-->
+	<select id="productList3" parameterType="productVO" resultType="productVO">
+		select * from "PRODUCT" where placetype = #{placetype}
+	</select>
+	
+	<!-- 선택된 방종류와 거래유형에 해당하는 정보를 출력 -->	
+	<select id="productList4" parameterType="productVO" resultType="productVO">
+		select * from "PRODUCT" where ptype = #{ptype} and ctype = #{ctype}
+	</select>
+	
+	<!-- 선택된 방종류와 세권유형에 해당하는 정보를 출력 -->
+	<select id="productList5" parameterType="productVO" resultType="productVO">
+		select * from "PRODUCT" where ptype = #{ptype} and placetype = #{placetype}
+	</select>
+	
+	<!-- 선택된 거래유형과 세권유형에 해당하는 정보를 출력 -->
+	<select id="productList6" parameterType="productVO" resultType="productVO">
+		select * from "PRODUCT" where ctype = #{ctype} and placetype = #{placetype}
+	</select>
+	
+	<!-- 선택된 방종류와 거래유형 그리고 세권유형에 해당하는 정보를 출력 -->
+	<select id="productList7" parameterType="productVO" resultType="productVO">
+		select * from "PRODUCT" where ptype = #{ptype} and ctype = #{ctype} and placetype = #{placetype}
+	</select>
+	
+	<select id="productDetailList" parameterType="String" resultType="productVO">
+		select * from "PRODUCT" where pnum = #{pnum}
+	</select>
+	
+</mapper>

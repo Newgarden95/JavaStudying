@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;start.win&apos; to &apos;Win&apos;&#x0D;&#x0A;- Original project: &apos;mega&apos;&#x0D;&#x0A;- Original element: &apos;start.win&apos;&#x0D;&#x0A;- Renamed element: &apos;start.Win&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;win&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;start{win.java[win" matchStrategy="1" name="Win" qualified="false" references="true" similarDeclarations="false" stamp="1613959076676" textual="false" version="1.0"/>
+</session>

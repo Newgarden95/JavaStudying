@@ -1,0 +1,20 @@
+@charset "UTF-8";
+body{
+	color: blue;/* 글자색 */
+	
+}
+/* id에 대한 스타일 */
+#b{
+	background: yellow;
+	color: red;
+}
+/* 태그에 대한 스타일 */
+input{
+	font-size: 20px;
+}
+
+/* 클래스에 대한 스타일 */
+.in{
+	background: yellow;
+	color: red;
+}

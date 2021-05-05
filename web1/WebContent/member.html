@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="EUC-KR">
+		<link rel = "stylesheet" type = "text/css" href="one.css">
+		<title>회원가입</title>
+		<!-- 자바스크립트 사용 
+		script =type = "text/javascript"의 뜻
+		텍스트로 쓰는데 자바스크립트로 사용하겠다-->
+		<script type="text/javascript">
+			//alert('내가 동적으로 떠요!!')   
+			//자바 스크립트는 자바와 같은 느낌 but, 자바처럼 엄격하지 않음 (자바: 서버 / 자바스크립트: 브라우저)
+			//아이디 길이가 5이상이면 페이지 넘어가도록 만들기
+			//id = "root"
+			
+			id = prompt('id를 입력하세요.') // 입력메소드 : prompt()
+			alert('글자수'+id.length)
+			alert(id.length) //출력메소드 : alert()
+			if(id.length>=5){
+				alert("id가 5글자 이상입니다. 로그인 가능합니다.")
+			}else{
+				alert('id가 5글자 미만입니다. 다시 입력해주세요.')
+			}
+			</script>
+		
+	</head>
+	<body>
+		<h2>회원가입화면입니다.</h2>
+		아이디: <input> <br>
+		패스워드: <input> <br>
+		이름: <input> <br>
+		연락처: <input> <br>
+		<button><img src = "naver.png" , width = "200", height = "50"></button>
+		<hr>
+		<a href = "check.html">check</a>
+	</body>
+</html>

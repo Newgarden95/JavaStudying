@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="product">
+<!-- CRUD 4가지 만들기 -->
+<!-- product.메서드명 으로 mybatis를 사용할 수 있다. -->
+<!-- root-context.xml의 지정된 경로로 처리해준다. -->
+	<insert id="insert" parameterType="productVO"><!-- ProductDAO에서 id가 insert인 기능을 찾을때 아래 SQL문을 실행하여 DB에 data 저장 -->
+		insert into PRODUCT values (product_seq.nextval, #{pname}, #{ptype}, 
+		#{ctype}, #{price}, #{address}, #{contact}, #{floor}, #{rsize}, #{room}, 
+		#{total}, #{placetype}, #{roomimg}, #{pinfo}, #{dstatue}, #{address2})
+	</insert>	
+	
+	<select id="select" parameterType="productVO" resultType="productVO">
+		select * from PRODUCT where contact = #{contact} order by pnum
+	</select>
+
+	<select id="all" parameterType="productVO" resultType="productVO">
+		select * from PRODUCT order by pnum
+	</select>
+	
+	<select id="detail" parameterType="productVO" resultType="productVO">
+		select * from PRODUCT where pnum = #{pnum}
+	</select>
+	
+	<update id="update" parameterType="productVO">
+		update PRODUCT set pname = #{pname}, ptype = #{ptype}, ctype = #{ctype},
+		price = #{price}, address = #{address}, contact = #{contact}, floor = #{floor},
+		rsize = #{rsize}, room = #{room}, total = #{total}, placetype = #{placetype},
+		roomimg = #{roomimg}, pinfo = #{pinfo}, dstatue = #{dstatue}, address2 = #{address2} where pnum = #{pnum}
+	</update>
+	
+	<delete id="delete" parameterType="productVO">
+		delete from PRODUCT where pnum = #{pnum}
+	</delete>
+</mapper>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;2차프로젝트_수정본 (2)&apos; to &apos;2차프로젝트_최종본&apos;&#x0D;&#x0A;- Original element: &apos;2차프로젝트_수정본 (2)&apos;&#x0D;&#x0A;- Renamed element: &apos;2차프로젝트_수정본 (2)&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;2차프로젝트_수정본 (2)&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=2차프로젝트_수정본 \(2)" name="2차프로젝트_최종본" references="true" stamp="1618409421491" version="1.0"/>
+</session>

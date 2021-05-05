@@ -1,0 +1,31 @@
+<!DOCTYPE html><!-- ctrl+shift+/     <>로구성된 것들을 태그라고 부른다  , 태그: 뷰를 만드는 언어이다.-->
+<html>
+	<head>
+		<!-- css(스타일을위한파일)파일은 head부분에 넣어준다 -->
+		<!-- <link rel(relation) = "" type =  href="연결할 스타일시트">-->
+		<!-- src VS href 차이 -->
+		<!-- src : <script>태그로 외부 js파일을 불러올떄 사용 / <img>태그에 파일 디렉토리 경로의 특정 이미지 지정할때 사용 -->
+		<!-- href : <link>태그로 외부 CSS파일을 불러올 때 사용 / <a>태그에 홈페이지 등의 주소를 입힐 때 사용 -->
+		
+		<meta charset="EUC-KR"><!-- meta: 부가적으로 설정하는 부분 -->
+		<link rel = "stylesheet" type = "text/css" href="one.css"> <!-- link태그: 현재 문서와 외부 리소스와의 연결 관계 명시, 스타일 시트에 링크하는데 가장 많이 사용 -->
+		<title>나의 첫페이지</title><!-- <title> : 브라우저 제목부분 -->
+		<script type="text/javascript" src="out.js"></script> <!-- //out.js 소스코드를 불러오겠다... 자바스크립트 -->
+		<script type="text/javascript">/* welocome이라는 함수 사용 */
+        	welcome()
+      	</script>
+	</head>
+	<body><!-- 브라우저의 전반적 대부분 내용을 담고 있는 부분 -->
+	<!-- 제목은 <h>태그 활용 -->
+	<h1>나의 첫 페이지 주요 기능</h1>
+	<!-- <hr>태그는 수평선을 그어주는 태그-->
+	<hr width="800">
+	내가원하는 페이지!!! 이거 실행하려면 톰캣 실행되고있으면 안됨!! 왜why? 하나의 포트로 여러개 띄울수 없는데 톰캣 스타트하고있으면 당연히 브라우저 못키지!!<br> <!-- <br>은 break의 의미로 엔터기능 -->
+	<!-- <a(ancher:닻) href="">~: 눌렀을 때 이동할 수 있게 해주는 태그  href: hyper reference => 이동할 사이트로 넘어가도록-->
+	<a href="http(hyper text transfer protocol)://www.naver.com">나를 눌러요!</a><br>
+	<a href="http://www.daum.net">다음사이트입니다.</a><br>
+	<a href = "http://www.google.com">구글사이트입니다.</a><br>
+	<a href="login.html">로그인페이지로</a> <!-- 같은 프로젝트에 있는 경우 가능 -->
+	<a href="member.html">회원가입화면입니다.</a>
+	</body>
+</html>

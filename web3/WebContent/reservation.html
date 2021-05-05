@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- 본인의 프로젝트 주제로 입력하는 화면을 만들어보세요. -->
+<!-- 다음페이지는 product2.jsp  -->
+<h1>결제입력창</h1>
+<hr color = "green">
+<form action="reservation2.jsp">
+	예약자 ID: (로그인 상태에서 예약이 가능 =>자동입력되도록)<br> <!-- 로그인 정보(selct) -->
+	예약자 이름: <input name = "name"><br>
+	예약자 핸드폰번호: <input name = "tel"><br>
+	숙소:
+	<select name = "room">
+		<option value = "hotel">hotel
+		<option value = "minbak">minbak
+		<option value = "resort">resort
+	</select><br>
+	예약일자:<input name = "date"><br>
+	결제방식:
+	<select name = "payment">
+		<option value = "card">card
+		<option value = "transfer">transfer
+	</select><br>
+	<button type = "submit">예약하기</button>
+</form>
+</body>
+</html>

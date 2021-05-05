@@ -1,0 +1,17 @@
+package 반복;
+
+import java.util.Scanner;
+
+public class 연습문재8 {
+	public static void main(String[] args) {
+		Scanner stdIn = new Scanner(System.in);
+
+		System.out.println("1부터 n까지의 합을 구합니다.");
+		System.out.print("n의 값：");
+		int n = stdIn.nextInt();
+
+		int sum = (n + 1) * (n / 2) + (n % 2 == 1 ? (n + 1) / 2 : 0); // 짝수개면 짝이 맞춰져서 떨어짐, but 홀수개면 남은 홀수개(중앙값)을 더해줘야함
+
+		System.out.println("1부터 " + n + "까지의 합은 " + sum + "입니다.");
+	}
+}	

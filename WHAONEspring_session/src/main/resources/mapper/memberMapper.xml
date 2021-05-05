@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 멤버테이블과 관련된 sql문을 담아둠 -->
+<mapper namespace="member"> <!-- 테이블이름하고 같게하는게 혼동하지 안됨 -->
+	<insert id= "insert" parameterType="memberVO"><!-- insert 관련된 sql문 -->
+		insert into "MEMBER" values (#{id}, #{pw}, #{name}, #{tel}) 
+		
+	</insert>
+	<delete id="delete" parameterType="memberVO">
+		delete from "MEMBER" where id = #{id}
+	</delete>
+	<update id="update" parameterType="memberVO">
+		update "MEMBER" set tel = #{tel} where id = #{id}
+	</update>
+	
+	<select id="select" parameterType="memberVO" resultType="memberVO">
+		select * from "MEMBER" where id = #{id}
+	</select>
+	
+	<!-- 세션처리를 위한 로그인부분 -->
+	<select id="login" parameterType="memberVO" resultType="memberVO">
+		select * from "MEMBER" where id = #{id} and pw = #{pw}
+		<!-- #: el -->
+		<!-- sql문 객체화
+		Statement VS PreparedStatment(속도 빠름)
+		 Statement => select * from member where id = 'root' and pw = 'root'
+		 					값이 달라지면 새로운 객체 다시 생성해야함 따라서 속도/효율적인 측면에서 떨어짐
+		 PreparedStatment => select * from member where id = ? and pw = ?
+		 					실행할 떄 id, pw를 넣어서 실행!!( 어떤게 들어오든 객체화 시킨거에 값만 넣으면 되니까 더 효율적)
+		 -->
+	</select>
+
+	<select id="all" resultType="memberVO">
+		select * from "MEMBER"
+	</select>	
+	
+	<select id="all2" resultType="memberVO">
+		select * from "MEMBER"
+	</select>	
+</mapper>

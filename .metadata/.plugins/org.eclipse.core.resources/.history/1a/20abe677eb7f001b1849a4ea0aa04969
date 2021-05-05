@@ -1,0 +1,14 @@
+package 그래픽2;
+
+import javax.swing.JFrame;
+
+public class 카운트다운 extends JFrame {
+	//생성자 메서드
+	public 카운트다운() {
+		
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+}

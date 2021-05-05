@@ -1,0 +1,79 @@
+package 정리문제;
+
+import javax.swing.JFrame;
+import javax.swing.JTextField;
+import javax.swing.JLabel;
+import java.awt.Font;
+import javax.swing.JButton;
+import java.awt.SystemColor;
+import java.awt.Color;
+import javax.swing.JFormattedTextField;
+
+public class 계산기프로젝트 {
+	private static JTextField textField;
+	private static JTextField textField_1;
+	private static JTextField textField_2;
+	public static void main(String[] args) {
+		JFrame f = new JFrame();
+		f.getContentPane().setBackground(SystemColor.activeCaption);
+		
+		f.setSize(500,500);
+		f.getContentPane().setLayout(null);
+		
+		textField = new JTextField();
+		textField.setBounds(155, 10, 182, 72);
+		f.getContentPane().add(textField);
+		textField.setColumns(10);
+		
+		JLabel lblNewLabel = new JLabel("결과값: ");
+		lblNewLabel.setFont(new Font("굴림", Font.PLAIN, 22));
+		lblNewLabel.setBounds(72, 20, 98, 44);
+		f.getContentPane().add(lblNewLabel);
+		
+		textField_1 = new JTextField();
+		textField_1.setBounds(155, 119, 172, 44);
+		f.getContentPane().add(textField_1);
+		textField_1.setColumns(10);
+		
+		textField_2 = new JTextField();
+		textField_2.setColumns(10);
+		textField_2.setBounds(155, 185, 172, 44);
+		f.getContentPane().add(textField_2);
+		
+		JLabel lblNewLabel_1 = new JLabel("num1: ");
+		lblNewLabel_1.setFont(new Font("굴림", Font.PLAIN, 20));
+		lblNewLabel_1.setBounds(72, 119, 84, 44);
+		f.getContentPane().add(lblNewLabel_1);
+		
+		JLabel lblNewLabel_1_1 = new JLabel("num2: ");
+		lblNewLabel_1_1.setFont(new Font("굴림", Font.PLAIN, 20));
+		lblNewLabel_1_1.setBounds(72, 186, 98, 37);
+		f.getContentPane().add(lblNewLabel_1_1);
+		
+		JButton b1 = new JButton("+");
+		b1.setBackground(Color.PINK);
+		b1.setFont(new Font("굴림", Font.PLAIN, 25));
+		b1.setBounds(24, 268, 98, 72);
+		f.getContentPane().add(b1);
+		
+		JButton b2 = new JButton("-");
+		b2.setBackground(Color.PINK);
+		b2.setFont(new Font("굴림", Font.PLAIN, 25));
+		b2.setBounds(134, 268, 98, 72);
+		f.getContentPane().add(b2);
+		
+		JButton b3 = new JButton("*");
+		b3.setBackground(Color.PINK);
+		b3.setFont(new Font("굴림", Font.PLAIN, 25));
+		b3.setBounds(245, 268, 98, 72);
+		f.getContentPane().add(b3);
+		
+		JButton b4 = new JButton("/");
+		b4.setBackground(Color.PINK);
+		b4.setFont(new Font("굴림", Font.PLAIN, 25));
+		b4.setBounds(354, 268, 98, 72);
+		f.getContentPane().add(b4);
+		
+		f.setVisible(true);
+	}
+}

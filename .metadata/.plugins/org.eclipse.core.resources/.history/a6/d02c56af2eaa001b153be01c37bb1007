@@ -1,0 +1,15 @@
+package 반복;
+
+public class 연습문제9 {
+	
+	static int sumof(int a, int b) {
+		int sum = 0;
+		for(a = a ; a<=b; a++) {
+			sum+=a;
+		}
+		return sum;
+	}
+	public static void main(String[] args) {
+		
+	}
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\swo\java_project\project02"/>
+		</list>
+	</section>
+	<section name="ExternalProjectImportWizard">
+		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\swo\java_project\2차프로젝트_찐최종본"/>
+			<item value="C:\swo\java_project\정온님거"/>
+			<item value="C:\swo\java_project\2차프로젝트_수정본 (2)"/>
+			<item value="C:\swo\java_project\project02-3"/>
+			<item value="C:\swo\java_project\2차프로젝트"/>
+			<item value="C:\swo\java_project\싱글톤활용"/>
+			<item value="C:\swo\java_project\싱글톤만들기"/>
+			<item value="C:\swo\java_project\WHAONEspring_session"/>
+			<item value="C:\swo\java_project\WHAONEproject"/>
+			<item value="C:\swo\java_project\spring4141"/>
+			<item value="C:\swo\java_project\jeju20210225"/>
+			<item value="C:\swo\java_project\project01-01"/>
+			<item value="C:\swo\java_project\jeju"/>
+			<item value="C:\swo\java_project\jeju (2)"/>
+			<item value="C:\swo\java_project\web0506"/>
+			<item value="C:\swo\java_project\jejuTest (1)"/>
+			<item value="C:\swo\java_project\web5"/>
+			<item value="C:\swo\java_project\DB2"/>
+			<item value="C:\swo\java_project\jejuTest"/>
+			<item value="C:\swo\java_project\jejuTest (2)"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+			<item value="C:\swo\java_project\1차프로젝트\WebContent\page.jsp"/>
+		</list>
+	</section>
+</section>

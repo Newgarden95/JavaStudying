@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+/*공유를 위해 밖에다 설정해두기*/
+/*
+body {
+	color: green;  글자색 
+	font-size: 40px; 글자크기 
+	}
+*/
+li:nth-child(2n) { /* li중 짝수부분만  */
+	background: red;
+}
+
+li:nth-child(2n+1) { /* li중 홀수부분만  */
+	background: yellow;
+}
+
+li {
+	list-style: none; /* 리스트 앞에 동그라미 사라짐 */
+	float: left; /* 리스트가 아래로 내려가는게 아니라 왼쪽에서부터 떠다니도록 */
+	padding: 20px; /* 앞뒤 양옆 떨어트리기 */
+	/*background: pink;*/
+}
+
+li:first-child { /* 첫번째 리스트 */
+	border-radius: 30px 0px 0px 30px;
+}
+
+li:last-child {
+	border-radius: 0px 30px 30px 0px
+}
+
+/* id를 선택해서 스타일을 지정할 때는 #을 사용한다 */
+#total {
+	
+}
+
+#top {
+	width: 800px; /* top영역 지정을 위한 박스 */
+	height: 100px;
+	background: green; /* 박스를 눈으로 확인하기 위해 */
+	padding: 50px;
+}
+
+#top2 {
+	width: 100px;
+	height: 500px;
+	background: black;
+	color: yellow;
+	/* 위치 조절을 위한 부분 */
+	top: 5px; /* 위에서 얼마 떨어질래 */
+	right: 5px; /* 오른쪽에서 얼마 떨어질래 */
+	position: fixed; /* 위에서 설정한 top, right에 해당하도록 위치이동하고 고정(스크롤해도 고정) */
+	border-radius: 100px 20px 30px 40px;
+	
+	/* 왼쪽탑 -> 오른쪽탑 으로 시계방향으로 둥글게 만들기 */
+}
+
+#center {
+	background: pink;
+	width: 800px;
+	height: 700px;
+}

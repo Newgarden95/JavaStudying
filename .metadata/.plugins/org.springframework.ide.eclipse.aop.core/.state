@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="spring3000"/>
+<aop-project name="스피링활용MVC2실습"/>
+<aop-project name="WHAONEproject"/>
+<aop-project name="WHAONEspring_session"/>
+<aop-project name="project"/>
+<aop-project name="싱글톤마이바티스연습"/>
+<aop-project name="spring400"/>
+<aop-project name="spring39"/>
+<aop-project name="spring40"/>
+<aop-project name="2차프로젝트_수정본"/>
+<aop-project name="string30"/>
+<aop-project name="2차프로젝트"/>
+<aop-project name="springtest01"/>
+<aop-project name="2차프로젝트_최종본"/>
+<aop-project name="spring4141"/>
+<aop-project name="spring38"/>
+<aop-project name="spring41"/>
+<aop-project name="project02-3"/>
+<aop-project name="spring_session"/>
+<aop-project name="springtest02"/>
+</aop-reference-model>

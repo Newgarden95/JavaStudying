@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+<!-- 테이블 개수 만큼 생성 -->
+   <typeAliases>
+      <typeAlias type="com.mega.mvc2000.MemberVO" alias="memberVO"></typeAlias> <!-- alias = memberVO는 매퍼에서 사용함 -->
+      <typeAlias type="com.mega.mvc2000.BbsVO" alias="bbsVO"></typeAlias> <!-- alias = bbsVO는 매퍼에서 사용하는 VO -->
+   </typeAliases>
+   <mappers>
+      <mapper resource="mapper/memberMapper.xml" /> <!-- sql문이 저장된 xml파일을 매퍼로 사용 -->
+      <mapper resource="mapper/bbsMapper.xml" /> <!-- sql문이 저장된 xml파일을 매퍼로 사용 -->
+   </mappers>
+</configuration>

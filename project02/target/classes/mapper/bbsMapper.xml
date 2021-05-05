@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="bbs">
+	<insert id="insert" parameterType="bbsVO"><!-- memberVO는 mybatis-config.xml 파일의 alias="memberVO" 이랑 일치시켜줌. -->
+		insert into BBS values (#{id}, #{title}, #{content}, #{writer})
+	</insert>
+	<delete id="delete" parameterType="bbsVO">
+		delete from BBS where id = #{id}
+	</delete>
+	<update id="update" parameterType="bbsVO">
+		update BBS set title = #{title} where id = #{id}
+	</update>
+	<select id="select" parameterType="bbsVO">
+		select * from BBS where id = #{id}
+	</select>
+</mapper>
